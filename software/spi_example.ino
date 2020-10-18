@@ -21,10 +21,11 @@
 
 #define HEXTONIBBLE(c) (c >= 'A' ? (c-'A')+10 : (c-'0')) //(*(c) >= 'A' ? (*(c)-'A')+10 : (*(c)-'0'))
 
-#define RX_BUFFER_LEN 64 //32 64 128 or 256 bytes
+#define RX_BUFFER_LEN 64 //32, 64, 128 or 256 bytes
 
 unsigned char rxbuffer[RX_BUFFER_LEN];
-volatile unsigned char rx_head=0, rx_tail=0, rx_bytes_available=0;
+volatile unsigned char rx_head=0, rx_tail=0;
+volatile unsigned int rx_bytes_available=0;
 
 
 void setup()
