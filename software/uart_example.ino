@@ -5,7 +5,7 @@
 #include <SoftwareSerial.h>
 
 
-#define RST_PIN    9 //Reset
+#define RST_PIN    9 //Reset (FATSC reset input pin not 5V tolerant)
 #define RX_PIN    10 //RX connect to FATSC TX
 #define TX_PIN    11 //TX connect to FATSC TX
 #define SCK_PIN   13 //CLK/SCK, low=9600, high=115200

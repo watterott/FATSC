@@ -5,7 +5,7 @@
 #include <SPI.h>
 
 
-#define RST_PIN    9 //Reset
+#define RST_PIN    9 //Reset (FATSC reset input pin not 5V tolerant)
 #define CS_PIN    10 //CS/SS chip select
 #define MOSI_PIN  11 //SDI/MOSI (ICSP: 4, Uno: 11, Mega: 51)
 #define MISO_PIN  12 //SDO/MISO (ICSP: 1, Uno: 12, Mega: 50)
